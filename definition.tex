@@ -1,12 +1,16 @@
 \documentclass{article}
 \usepackage{fullpage}
 \usepackage{amsmath}
+\usepackage{amssymb}
 
 \begin{document}
 \section{Parameterized Operator}
 \paragraph{For - Definition}
 
 \[ \operatorname*{cfor}_{x=a}^{b}\left(\$\ast c,n\right) = \operatorname*{for}_{x=a}^{b}\left(c,\ast \right) \]
+\[ \operatorname*{for}_{x=1}^{b}\left(c, \ast\right) = \operatorname*{for}^{b}\left(c,\ast \right) \]
+Sei $\ast$ ein beliebiger arithmetischer Operator und $m \in \mathbb{R}, n \in \mathbb{N}$, dann sei $for$ definiert mit:
+\[ \operatorname*{for}^n \left(m, \ast \right) = \operatorname*{\underbrace{m \ast \dotsb \ast m}}_{n} \]
 
 \paragraph{For - Examples}
 
@@ -14,5 +18,6 @@
 \[ \operatorname*{for}_{x=1}^{2}\left(3,+\right) = 3+3 \]
 
 \paragraph{Parameterized Operator}
-\[ \operatorname*{for}_{x=1}^{n}\left(a,\operatorname*{\ast}^m\right) = a\operatorname*{\ast}^{m+1}n\]
+\[ \operatorname*{for}^{n}\left(a,\operatorname*{\ast}^m\right) = \operatorname*{\underbrace{a \operatorname*{\ast}^m \dotsb \operatorname*{\ast}^m a}}_n = a\operatorname*{\ast}^{m+1}n\]
+\[ a \operatorname*{\ast}^1 b = a + b \]
 \end{document}
