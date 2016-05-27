@@ -4,6 +4,15 @@
 
 \begin{document}
 \section{Parameterized Operator}
-\paragraph{Definition}
-\[ for_{x=1}^b \]
+\paragraph{For - Definition}
+
+\[ \operatorname*{cfor}_{x=a}^{b}\left(\$\ast c,n\right) = \operatorname*{for}_{x=a}^{b}\left(c,\ast \right) \]
+
+\paragraph{For - Examples}
+
+\[ \operatorname*{cfor}_{x=1}^{2}\left(\$+3,0\right) = 0+3+3 \]
+\[ \operatorname*{for}_{x=1}^{2}\left(3,+\right) = 3+3 \]
+
+\paragraph{Parameterized Operator}
+\[ \operatorname*{for}_{x=1}^{n}\left(\operatorname*{\ast}^m,a\right) = a\operatorname*{\ast}^{m+1}n\]
 \end{document}
