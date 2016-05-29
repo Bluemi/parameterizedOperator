@@ -1,5 +1,5 @@
 \documentclass{article}
-\usepackage{fullpage}
+% \usepackage{fullpage}
 \usepackage{amsmath}
 \usepackage{amssymb}
 
@@ -7,17 +7,15 @@
 \section{Rechengesetze f\"ur $\operatorname*{\ast}^0$\newline}
 
 \subsection{}
-F\"ur $a, n \in \mathbb{N}, n > 1$ gilt:
+F\"ur $a, n \in \mathbb{N}$ gilt:
 \[ \underbrace{a \operatorname*{\ast}^0 \dotsb \operatorname*{\ast}^0 a}_n = a+n \]
-Daher gilt f\"ur $a, n \in \mathbb{N}, n > 1, a > 1$:
+Daher gilt f\"ur $a, n \in \mathbb{N}$:
 \[ \underbrace{a \operatorname*{\ast}^0 \dotsb \operatorname*{\ast}^0 a}_n =
    a+n = \underbrace{n \operatorname*{\ast}^0 \dotsb \operatorname*{\ast}^0 n}_a \]
 \subsection{}
-Leider gehen aus der Definition von $\operatorname*{\ast}^0$ Fehler hervor:
-\[ a+1 = \underbrace{\left(a\operatorname*{\ast}^0 \dotsb \operatorname*{\ast}^0 a\right) }_1 =
-  \underbrace{\left(1\operatorname*{\ast}^0 \dotsb \operatorname*{\ast}^0 1\right) }_a = a \]
-Und
-\[ a+0 = \underbrace{\left(a\operatorname*{\ast}^0 \dotsb \operatorname*{\ast}^0 a\right) }_0 = 0 \]
+Daraus folgt insbesondere:
+\[ a + 0 = \underbrace{a\operatorname*{\ast}^0 \dotsb \operatorname*{\ast}^0 a}_0 \]
+\[ a + 1 = \underbrace{a\operatorname*{\ast}^0 \dotsb \operatorname*{\ast}^0 a}_1 \]
 \subsection{}
 	Das Assoziativgesetz gilt nicht:
 \[ 2 \operatorname*{\ast}^0 2 \operatorname*{\ast}^0 2 \operatorname*{\ast}^0 2 \operatorname*{\ast}^0 2 \operatorname*{\ast}^0 2 \neq
@@ -32,7 +30,7 @@ Und
 	Eine vereinfachte Form des Distributivgesetzes gilt:
 \[ \left(a + 2\right) + c = \left(a\operatorname*{\ast}^0a\right) + c = \left(a+c\right)\operatorname*{\ast}^0\left(a+c\right) = 2 + \left(a + c\right) \]
 \subsection{}
-F\"ur $a, z, n \in \mathbb{N}, n > 1$ und $n+z > 1$ gilt:
+F\"ur $a, z, n \in \mathbb{N}$ gilt:
 \[ a + n = \underbrace{a \operatorname*{\ast}^0 \dotsb \operatorname*{\ast}^0 a}_n =
    \underbrace{\left(a - z\right) \operatorname*{\ast}^0 \dotsb \operatorname*{\ast}^0 \left(a - z\right)}_{n+z} \]
 \end{document}
