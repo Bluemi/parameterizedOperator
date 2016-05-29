@@ -1,36 +1,41 @@
 \documentclass{article}
-% \usepackage{fullpage}
+\usepackage{fullpage}
 \usepackage{amsmath}
 \usepackage{amssymb}
 
 \begin{document}
-\section{Rechengesetze f\"ur $\operatorname*{\ast}^0$\newline}
+\section{Rechengesetze f\"ur $\operatorname*{\times}^0$\newline}
 
 \subsection{}
 F\"ur $a, n \in \mathbb{N}$ gilt:
-\[ \underbrace{a \operatorname*{\ast}^0 \dotsb \operatorname*{\ast}^0 a}_n = a+n \]
+\[ \underbrace{a \operatorname*{\times}^0 \dotsb \operatorname*{\times}^0 a}_n = a+n \]
 Daher gilt f\"ur $a, n \in \mathbb{N}$:
-\[ \underbrace{a \operatorname*{\ast}^0 \dotsb \operatorname*{\ast}^0 a}_n =
-   a+n = \underbrace{n \operatorname*{\ast}^0 \dotsb \operatorname*{\ast}^0 n}_a \]
+\[ \underbrace{a \operatorname*{\times}^0 \dotsb \operatorname*{\times}^0 a}_n =
+   a+n = \underbrace{n \operatorname*{\times}^0 \dotsb \operatorname*{\times}^0 n}_a \]
 \subsection{}
 Daraus folgt insbesondere:
-\[ a + 0 = \underbrace{a\operatorname*{\ast}^0 \dotsb \operatorname*{\ast}^0 a}_0 \]
-\[ a + 1 = \underbrace{a\operatorname*{\ast}^0 \dotsb \operatorname*{\ast}^0 a}_1 \]
+\[ a + 0 = \underbrace{a\operatorname*{\times}^0 \dotsb \operatorname*{\times}^0 a}_0 \]
+\[ a + 1 = \underbrace{a\operatorname*{\times}^0 \dotsb \operatorname*{\times}^0 a}_1 \]
 \subsection{}
 	Das Assoziativgesetz gilt nicht:
-\[ 2 \operatorname*{\ast}^0 2 \operatorname*{\ast}^0 2 \operatorname*{\ast}^0 2 \operatorname*{\ast}^0 2 \operatorname*{\ast}^0 2 \neq
-   \left(2 \operatorname*{\ast}^0 2 \operatorname*{\ast}^0 2\right) \operatorname*{\ast}^0 \left(2 \operatorname*{\ast}^0 2 \operatorname*{\ast}^0 2\right) \]
-\[ 8 \neq 5 \operatorname*{\ast}^0 5 \]
+\[ 2 \operatorname*{\times}^0 2 \operatorname*{\times}^0 2 \operatorname*{\times}^0 2 \operatorname*{\times}^0 2 \operatorname*{\times}^0 2 \neq
+   \left(2 \operatorname*{\times}^0 2 \operatorname*{\times}^0 2\right) \operatorname*{\times}^0 \left(2 \operatorname*{\times}^0 2 \operatorname*{\times}^0 2\right) \]
+\[ 8 \neq 5 \operatorname*{\times}^0 5 \]
 \[ 8 \neq 7 \]
 	Zum Thema Assoziativit\"at gilt jedoch:
-\[  \underbrace{\left(a+b\right)\operatorname*{\ast}^0 \dotsb \operatorname*{\ast}^0 \left(a+b\right)}_n =
-    \underbrace{\underbrace{\left(a\operatorname*{\ast}^0 \dotsb\operatorname*{\ast}^0 a\right)}_b \operatorname*{\ast}^0 \dotsb \operatorname*{\ast}^0\underbrace{\left(a\operatorname*{\ast}^0 \dotsb\operatorname*{\ast}^0 a\right)}_b }_n \]
-\[ = a + b + n = \underbrace{a\operatorname*{\ast}^0 \dotsb \operatorname*{\ast}^0 a}_{b+n} \]
+\[  \underbrace{\left(a+b\right)\operatorname*{\times}^0 \dotsb \operatorname*{\times}^0 \left(a+b\right)}_n =
+    \underbrace{\underbrace{\left(a\operatorname*{\times}^0 \dotsb\operatorname*{\times}^0 a\right)}_b \operatorname*{\times}^0 \dotsb \operatorname*{\times}^0\underbrace{\left(a\operatorname*{\times}^0 \dotsb\operatorname*{\times}^0 a\right)}_b }_n \]
+\[ = a + b + n = \underbrace{a\operatorname*{\times}^0 \dotsb \operatorname*{\times}^0 a}_{b+n} \]
 \subsection{}
 	Eine vereinfachte Form des Distributivgesetzes gilt:
-\[ \left(a + 2\right) + c = \left(a\operatorname*{\ast}^0a\right) + c = \left(a+c\right)\operatorname*{\ast}^0\left(a+c\right) = 2 + \left(a + c\right) \]
+\[ \left(a + 2\right) + c = \left(a\operatorname*{\times}^0a\right) + c = \left(a+c\right)\operatorname*{\times}^0\left(a+c\right) = 2 + \left(a + c\right) \]
 \subsection{}
 F\"ur $a, z, n \in \mathbb{N}$ gilt:
-\[ a + n = \underbrace{a \operatorname*{\ast}^0 \dotsb \operatorname*{\ast}^0 a}_n =
-   \underbrace{\left(a - z\right) \operatorname*{\ast}^0 \dotsb \operatorname*{\ast}^0 \left(a - z\right)}_{n+z} \]
+\[ a + n = \underbrace{a \operatorname*{\times}^0 \dotsb \operatorname*{\times}^0 a}_n =
+   \underbrace{\left(a - z\right) \operatorname*{\times}^0 \dotsb \operatorname*{\times}^0 \left(a - z\right)}_{n+z} \]
+\subsection{}
+Sei $\operatorname*{\otimes}^0$ der Antioperator von $\operatorname*{\times}^0$:
+\[ a = \left(a\operatorname*{\times}^0 b\right)\operatorname*{\otimes}^0 b \]
+dann gilt:
+\[ a = \left(a+2\right)\operatorname*{\otimes}^0 a \]
 \end{document}
